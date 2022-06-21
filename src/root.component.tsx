@@ -1,3 +1,12 @@
-export default function Root(props) {
-  return <section>{props.name} is mounted!</section>
+import { CssBaseline } from '@mui/material'
+import { AppProps } from 'single-spa'
+import Header, { HeaderProps } from './header'
+
+export default function Root(props: HeaderProps & AppProps) {
+  return (
+    <>
+      <CssBaseline />
+      <Header title={props.title} titlePath={props.titlePath} menuItems={props.menuItems} />
+    </>
+  )
 }
