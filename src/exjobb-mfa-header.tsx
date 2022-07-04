@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import singleSpaReact from 'single-spa-react'
-import { HeaderProps } from './header'
+import { HeaderProps } from './Header'
 import Root from './root.component'
 
 const lifecycles = singleSpaReact<HeaderProps>({
